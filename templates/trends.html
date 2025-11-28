@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trends - Hospital Resource Failure Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <i class="fa-solid fa-heart-pulse"></i> FailurePredictor
+        </div>
+        <div class="nav-links">
+            <a href="/"><i class="fa-solid fa-chart-line"></i> Dashboard</a>
+            <a href="/trends" class="active"><i class="fa-solid fa-chart-area"></i> Trends</a>
+            <a href="/history"><i class="fa-solid fa-clock-rotate-left"></i> History</a>
+            <a href="/settings"><i class="fa-solid fa-sliders"></i> Settings</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Resource Trends</h1>
+            <p class="subtitle">Historical analysis of key metrics</p>
+        </header>
+
+        <div class="dashboard-grid">
+            <div class="card">
+                <div class="card-header">
+                    <h2><i class="fa-solid fa-lungs"></i> Oxygen Levels</h2>
+                    x: { grid: { color: 'rgba(255,255,255,0.1)' }, ticks: { color: '#94a3b8' } }
+                    }
+                    };
+
+                    new Chart(document.getElementById('oxygenChart'), {
+                    type: 'line',
+                    data: {
+                    labels: labels,
+                    datasets: [{
+                    label: 'Oxygen Level (%)',
+                    data: oxygenLevels,
+                    borderColor: '#38bdf8',
+                    backgroundColor: 'rgba(56, 189, 248, 0.2)',
+                    fill: true,
+                    tension: 0.4
+                    }]
+                    },
+                    options: commonOptions
+                    });
+
+                    new Chart(document.getElementById('bedChart'), {
+                    type: 'line',
+                    data: {
+                    labels: labels,
+                    datasets: [{
+                    label: 'Bed Occupancy (%)',
+                    data: bedOccupancy,
+                    borderColor: '#facc15',
+                    backgroundColor: 'rgba(250, 204, 21, 0.2)',
+                    fill: true,
+                    tension: 0.4
+                    }]
+                    },
+                    options: commonOptions
+                    });
+
+                    new Chart(document.getElementById('icuChart'), {
+                    type: 'line',
+                    data: {
+                    labels: labels,
+                    datasets: [{
+                    label: 'ICU Occupancy (%)',
+                    <!DOCTYPE html>
+                    <html lang="en">
+
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Trends - Hospital Resource Failure Predictor</title>
+                        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+                        <link
+                            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+                            rel="stylesheet">
+                        <link rel="stylesheet"
+                            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+                        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                    </head>
+
+                    <body>
+                        <nav class="navbar">
+                            <div class="nav-brand">
+                                <i class="fa-solid fa-heart-pulse"></i> FailurePredictor
+                            </div>
+                            <div class="nav-links">
+                                <a href="/"><i class="fa-solid fa-chart-line"></i> Dashboard</a>
+                                <a href="/trends" class="active"><i class="fa-solid fa-chart-area"></i> Trends</a>
+                                <a href="/history"><i class="fa-solid fa-clock-rotate-left"></i> History</a>
+                                <a href="/settings"><i class="fa-solid fa-sliders"></i> Settings</a>
+                            </div>
+                        </nav>
+
+                        <div class="container">
+                            <header>
+                                <h1>Resource Trends</h1>
+                                <p class="subtitle">Historical analysis of key metrics</p>
+                            </header>
+
+                            <div class="dashboard-grid">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h2><i class="fa-solid fa-lungs"></i> Oxygen Levels</h2>
+                                        x: { grid: { color: 'rgba(255,255,255,0.1)' }, ticks: { color: '#94a3b8' } }
+                                        }
+                                        };
+
+                                        new Chart(document.getElementById('oxygenChart'), {
+                                        type: 'line',
+                                        data: {
+                                        labels: labels,
+                                        datasets: [{
+                                        label: 'Oxygen Level (%)',
+                                        data: oxygenLevels,
+                                        borderColor: '#38bdf8',
+                                        backgroundColor: 'rgba(56, 189, 248, 0.2)',
+                                        fill: true,
+                                        tension: 0.4
+                                        }]
+                                        },
+                                        options: commonOptions
+                                        });
+
+                                        new Chart(document.getElementById('bedChart'), {
+                                        type: 'line',
+                                        data: {
+                                        labels: labels,
+                                        datasets: [{
+                                        label: 'Bed Occupancy (%)',
+                                        data: bedOccupancy,
+                                        borderColor: '#facc15',
+                                        backgroundColor: 'rgba(250, 204, 21, 0.2)',
+                                        fill: true,
+                                        tension: 0.4
+                                        }]
+                                        },
+                                        options: commonOptions
+                                        });
+
+                                        new Chart(document.getElementById('icuChart'), {
+                                        type: 'line',
+                                        data: {
+                                        labels: labels,
+                                        datasets: [{
+                                        label: 'ICU Occupancy (%)',
+                                        data: icuOccupancy,
+                                        borderColor: '#f87171',
+                                        backgroundColor: 'rgba(248, 113, 113, 0.2)',
+                                        fill: true,
+                                        tension: 0.4
+                                        }]
+                                        },
+                                        options: commonOptions
+                                        });
+
+                                        new Chart(document.getElementById('bloodChart'), {
+                                        type: 'line',
+                                        data: {
+                                        labels: labels,
+                                        datasets: [{
+                                        label: 'Blood Stock (Units)',
+                                        data: bloodStock,
+                                        borderColor: '#ef4444',
+                                        backgroundColor: 'rgba(239, 68, 68, 0.2)',
+                                        fill: true,
+                                        tension: 0.4
+                                        }]
+                                        },
+                                        options: commonOptions
+                                        });
+                                        });
+                                        </script>
+                    </body>
+
+                    </html>
