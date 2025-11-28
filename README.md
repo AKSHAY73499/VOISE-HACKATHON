@@ -42,6 +42,10 @@ A real-time dashboard for monitoring and predicting hospital resource shortages.
     Open your browser and navigate to:
     `http://127.0.0.1:5000`
 
+5.  **DashBoard**
+   <img width="889" height="794" alt="image" src="https://github.com/user-attachments/assets/b0d33350-2fd9-45b7-9a58-effb8befc23c" />
+
+
 ## 📂 Project Structure
 
 ```
